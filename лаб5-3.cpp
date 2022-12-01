@@ -12,7 +12,7 @@ double cos1(double x, double eps)
 	while (abs(s) > eps)
 	{
 		value += s;
-		s = s * x * x / ((2 * i - 1) * (2 * i));
+		s = s * (-1.0) * x * x / ((2 * i - 1) * (2 * i));
 		i++;
 	}
 	return value;
